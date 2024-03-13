@@ -1,0 +1,3 @@
+Git repository for a docker image build with shiny apps for understanding different ideas in statistics. Developed for general education purposes (statistics and `R`) by P. Lombardo.
+
+More detail coming...

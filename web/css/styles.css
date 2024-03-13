@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+    padding: 2px 2px;
+}
+
+header {
+  color:#2C2C54;
+  background-color: #AAABB8;
+  border-bottom: #2C2C54 solid 2px;
+  padding: 8px;
+}
+
+
+h5 {
+  text-align: center;
+}
+
+ul li {
+  margin-bottom: 2%;
+  margin-left: 5%;
+}
+
+/* make app link stuff */
+.app-display {
+    border: 1px solid #bbb; /* Dotted border */
+    width: 90%;
+    border-radius: 5px; /* Rounded border */
+    margin: 0 auto; /* Center the coupon */
+    max-width: 600px;
+    box-shadow: 5px 2px gray;
+    padding: 5px 5px;
+}
+
+
+
+/* set responsive row columns */
+/* Main Page */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 4px 4px;
+  }
+  
+  .column img {
+    vertical-align: middle;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+
+  /* Set responsive columns for app pages*/
+  .app-row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 2px;
+    }
+
+
+  .app-column {
+    flex: 50%;
+    max-width: 50%;
+    padding: 2px 2px;
+  }
+
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media (max-width: 800px) {
+    .app-column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+
+/* Footer stuff */
+
+  footer {
+    margin-top: 2%;
+    border-top: 1px solid gray;
+    text-align: right;
+    font-style: italic;
+    font-size: 10px;
+  }
+
+  .hide {
+    display: none;
+    padding: 8px;
+    margin: 8px;
+  }
+
+  .myDIV {
+    display: flex;
+    background-color: #2C2C54;
+    color: black;
+    padding: 8px;
+    font-size: 25px;
+    border: none;
+    box-shadow: 4px 4px 2px 1px rgb(0,0,0,0.2);
+    /* cursor: pointer; */
+    border-radius: 15px;
+    margin: 25px;
+    width:80%;
+  }
+  
+  .myDIV a {
+    color: #ECECEC;
+    text-decoration: none;
+  }
+
+  h2 {
+    margin-bottom: 0px;
+  }
+
+  /* p {
+    margin-bottom: 0px
+  } */
+  
+  .description {
+    display: block;
+    background-color: white;
+    color: black;
+    margin: -10px 0px 50px 40px;
+    font-size: 18px;
+    /* border-bottom: solid rgb(208, 207, 207) 2px; */
+    /* border-top: solid rgb(208, 207, 207) 1px; */
+    /* box-shadow: 4px 4px 2px 1px rgb(0,0,0,0.2); */
+    width:70%;
+}
