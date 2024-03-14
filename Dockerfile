@@ -15,14 +15,21 @@ RUN R -e 'install.packages("car")'
 Run R -e 'install.packages("sortable")'
 
 # scripts to for making learnr htmls
-Run mkdir /scripts
-ADD scripts/render_learnr.sh /scripts
-ADD scripts/render.R /scripts
+# Run mkdir /scripts
+# ADD scripts/render_learnr.sh /scripts
+# ADD scripts/render.R /scripts
 
 # Copy leanr or shiny files
-COPY lessons/ggplot-basics /srv/shiny-server/ggplot-basics
-COPY lessons/make-tidy /srv/shiny-server/make-tidy
-COPY lessons/tidy-data /srv/shiny-server/tidy-data
+COPY lessons/anova /srv/shiny-server/anova
+COPY lessons/confidence-intervals /srv/shiny-server/confidence-intervals
+COPY lessons/descriptive-stats /srv/shiny-server/descriptive-stats
+COPY lessons/hypothesis-testing /srv/shiny-server/hypothesis-testing
+COPY lessons/power /srv/shiny-server/power
+COPY lessons/probability-distributions /srv/shiny-server/probability-distributions
+COPY lessons/regression /srv/shiny-server/regression
+COPY lessons/sampling-demos /srv/shiny-server/sampling-demos
+COPY lessons/sampling-distributions /srv/shiny-server/sampling-distributions
+COPY lessons/simulations /srv/shiny-server/simulations
 
 # Launchpage details
 COPY web/css /srv/shiny-server/css
@@ -30,9 +37,7 @@ COPY web/index.html /srv/shiny-server/index.html
 COPY web/images /srv/shiny-server/images
 
 # Run indexing scripts
-RUN sh /scripts/render_learnr.sh
-
-
+# RUN sh /scripts/render_learnr.sh
 
 EXPOSE 3838
 
