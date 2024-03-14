@@ -13,6 +13,7 @@ RUN R -e 'install.packages("learnr")'
 RUN R -e 'install.packages("kableExtra")'
 RUN R -e 'install.packages("car")'
 Run R -e 'install.packages("sortable")'
+Run R -e 'install.packages("patchwork")'
 
 # scripts to for making learnr htmls
 # Run mkdir /scripts
