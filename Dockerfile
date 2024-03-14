@@ -14,6 +14,7 @@ RUN R -e 'install.packages("kableExtra")'
 RUN R -e 'install.packages("car")'
 Run R -e 'install.packages("sortable")'
 Run R -e 'install.packages("patchwork")'
+Run R -e 'install.packages("latex2exp")'
 
 # scripts to for making learnr htmls
 # Run mkdir /scripts
