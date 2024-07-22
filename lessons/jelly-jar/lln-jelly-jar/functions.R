@@ -22,11 +22,13 @@ coin_flip<-function(n=500){
 coin<-coin_flip(n=2000)
 
 generate_plot<-function(data,n){
-    ggplot()+geom_line(aes(x=1:n,y=data[1:n]))+
-        geom_hline(yintercept = 0.2123,color='red',linewidth=1.2)+
+    ggplot()+
+        geom_hline(yintercept = 0.2123, color='red',linewidth=.9)+
+        geom_line(aes(x=1:n,y=data[1:n]),
+                  color='blue',linewidth=1.5)+
         ggtitle("Coin Flip Simulation")+
         coord_cartesian(ylim=c(0,1))+
-        labs(x="Number of Flips",y="Relative Frequency of Heads")+
+        labs(x="Number of Flips",y="Relative Frequency Green Jellies")+
         theme_bw()
 }
 

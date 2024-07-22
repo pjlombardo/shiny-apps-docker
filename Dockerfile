@@ -16,6 +16,9 @@ Run R -e 'install.packages("sortable")'
 Run R -e 'install.packages("patchwork")'
 Run R -e 'install.packages("latex2exp")'
 
+# for copy and past buttons
+# Run R -e 'install.packages("rclipboard")'
+
 # scripts to for making learnr htmls
 # Run mkdir /scripts
 # ADD scripts/render_learnr.sh /scripts

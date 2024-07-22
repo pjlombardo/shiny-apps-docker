@@ -21,7 +21,6 @@ ui<-fluidPage(
         column(1),
         column(4,
             actionButton("new_sim1","Generate a new simulation")
-            
         )
     ),
     
