@@ -7,14 +7,14 @@
 # BUILD from gk-learnr parente directory
 # docker build -t gk-learnr ~/gk-learnr/docker --no-cache
 
-From rocker/shiny-verse:4.3
+FROM rocker/shiny-verse:4.3
 
 RUN R -e 'install.packages("learnr")'
 RUN R -e 'install.packages("kableExtra")'
 RUN R -e 'install.packages("car")'
-Run R -e 'install.packages("sortable")'
-Run R -e 'install.packages("patchwork")'
-Run R -e 'install.packages("latex2exp")'
+RUN R -e 'install.packages("sortable")'
+RUN R -e 'install.packages("patchwork")'
+RUN R -e 'install.packages("latex2exp")'
 
 # for copy and past buttons
 # Run R -e 'install.packages("rclipboard")'
