@@ -29,6 +29,7 @@ COPY lessons/anova /srv/shiny-server/anova
 COPY lessons/confidence-intervals /srv/shiny-server/confidence-intervals
 COPY lessons/descriptive-stats /srv/shiny-server/descriptive-stats
 COPY lessons/hypothesis-testing /srv/shiny-server/hypothesis-testing
+COPY lessons/jelly-jar /srv/shiny-server/jelly-jar
 COPY lessons/power /srv/shiny-server/power
 COPY lessons/probability-distributions /srv/shiny-server/probability-distributions
 COPY lessons/regression /srv/shiny-server/regression
